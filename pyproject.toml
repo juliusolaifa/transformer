@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Transformer"
+version = "0.1.0"
+description = "An implementation of the 'Attention is all you need' paper"
+authors = [{ name = "Julius Olaifa", email = "jbolaifa@gmail.com" }]
+readme =  {file = "README.md", content-type = "text/markdown"}
+requires-python = ">=3.7"
+dependencies = []
+
+[project.urls]
+"Homepage" = "https://github.com/juliusolaifa/transformer"
+
+[tool.setuptools]
+packages = ["Transformer"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = "requirements.txt"}
